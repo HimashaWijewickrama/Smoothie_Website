@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Smoothie</title>
+    <link rel="icon" type="image/png" href="/images/im.jpg">
+
+      <!-- javascript form validation start -->
+    <script type="text/javascript">
+        function validateForm(){
+            let x = document.forms["myForm"]["name"].value;
+            let email =document.forms["myForm"]["email"].value;
+            let pnum = document.forms["myForm"]["pnum"].value;
+            let msg=document.forms["myForm"]["message"].value;
+            if(x==""){
+                alert("Name must be filled out");
+                return false;
+            }
+            if(email.indexOf('@')== -1 || email==""){
+                alert("Enter valid email");
+                return false;
+            }
+            if(isNaN(pnum)|| pnum.length<11){
+                alert("Enter valid contact number");
+                return false;
+            }
+            if(msg.length<50){
+                alert("Type your message briefly");
+                return false;
+            }
+            alert("Thank you for your response! We will contact you as soon as possible");
+            return true;
+        }
+
+    </script>
+
+<!-- javascript form validation end -->
+
+    <!-- css file  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font-awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- start of the header section -->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for=" toggle" class="fas fa-bars"></label>
+        <a href="#" class="logo">Smoothie<span>.</span></a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+            
+
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+
+    </header>
+    <!-- header end -->
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Fresh Smoothies</h3>
+            <span>Keep you fresh</span>
+            <p>
+                Strengthens your immune system.<br>
+                Let's try yummy smoothie!
+            </p>
+            <a href="#products" class="btn">Shop now</a>
+
+        </div>
+    </section>
+    <!-- home end -->
+    <!-- about section start -->
+    <section class="about" id="about">
+        <h1 class="heading"><span>about</span> us</h1>
+        <div class="row">
+            <div class="video-container">
+                <video src="images/about-vid.mp4.mp4" loop autoplay muted title="Our Top Receipes!"></video>
+
+
+            </div>
+            <div class="content">
+                <h3>why choose us?</h3>
+                <p>We started our first outlet in perth, Australia in 1998.
+                    We get to choose the theme of our shop, the types of ingredients we are using,
+                    and the way we are serving our customers. Here, our top smoothies from our daily customer's ratings in 2021.
+                </p>
+                
+                    <table>
+                        <tr>
+                            <th><p>product</p></th>
+                            <th><p>percentage of people interested</p></th>
+                        </tr>
+                        <tr>
+                            <td><p>lemon-guvana mix juice</p></td>
+                            <td><p>25.5%</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>orange smoothie</p></td>
+                        <td><p>20.5%</p></td>
+                </tr>
+                <tr>
+                    <td><p>pineapple smoothie</p></td>
+                    <td><p>19.5%</p></td>
+            </tr>
+            <tr>
+                <td><p>blueberry yourgart smoothie</p></td>
+                <td><p>17.47%</p></td>
+        </tr>
+        <tr>
+            <td><p>almond milk smoothie</p></td>
+            <td><p>17.53%</p></td>
+    </tr>
+                    </table>
+             
+
+                </p>
+                <a href="#" class="btn">Learn More</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- about section end -->
+    <!-- icon section start -->
+    <section class="icons-container">
+        <div class="icons">
+            <img src="images/icon-1.png" alt="" class="icoimg">
+            <div class="info">
+                <h3>free delivery</h3>
+                <span>island-wide</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="images/icon-2.png" alt="" class="icoimg">
+            <div class="info">
+                <h3>fresh smooties</h3>
+                <span>use only fresh fruities and ingredients</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="images/icon-3.png" alt="" class="icoimg">
+            <div class="info">
+                <h3>best offers</h3>
+                <span>amazing offers in every weekend</span>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="images/icon-4.png" alt="" class="icoimg">
+            <div class="info">
+                <h3>24 X 7 service</h3>
+                <span>we're open 24 X 7</span>
+            </div>
+        </div>
+
+    </section>
+    <!-- icon section end -->
+    <!-- smooties section start -->
+    <section class="products" id="products">
+        <h1 class="heading">top <span>smoothies</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/sm13.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>lemon-guvana mix juice</h3>
+                    <div class="price">Rs.590.00 <span>Rs.890.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm16.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>orange smoothie</h3>
+                    <div class="price">Rs.300.00 <span>Rs.350.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm17.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>ice cherry smoothie</h3>
+                    <div class="price">Rs.650.00 <span>Rs.700.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm18.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>pineapple smoothie</h3>
+                    <div class="price">Rs.390.00 <span>Rs.450.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="images/sm1.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>blueberry yougart smoothie</h3>
+                    <div class="price">Rs.790.00 <span>Rs.900.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm2.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>raspberry milk smootie</h3>
+                    <div class="price">Rs.600.00 <span>Rs.750.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm3.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>mango peanut smoothie</h3>
+                    <div class="price">Rs.300.00 <span>Rs.400.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm20.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>special wild fruit smoothie</h3>
+                    <div class="price">Rs.350.00 <span>Rs.450.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm21.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Chocolate Smoothie</h3>
+                    <div class="price">Rs.470.00 <span>Rs.570.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm22.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Greeny Smoothie</h3>
+                    <div class="price">Rs.500.00 <span>Rs.600.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm23.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>coffee milk smoothie</h3>
+                    <div class="price">Rs.390.00 <span>Rs.490.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm24.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Mint lemon Smoothie</h3>
+                    <div class="price">Rs.380.00 <span>Rs.480.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm9.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>avacado smoothie</h3>
+                    <div class="price">Rs.250.00 <span>Rs.350.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm25.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>almond milk smoothie</h3>
+                    <div class="price">Rs.550.00 <span>Rs.650.00</span></div>
+
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <img src="images/sm19.jpg" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-cart">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>strawberry smoothie</h3>
+                    <div class="price">Rs.790.00 <span>Rs.890.00</span></div>
+                 
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- smooties section end -->
+  
+    <!-- review section start -->
+    <section class="review" id="review">
+        <h1 class="heading">cutomer's <span> reviews</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Highly recomanded! Fast delivery with fresh yummy smoothies..! ❤️😍
+                </p>
+                <div class="user">
+                    <img src="images/user1.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Thilina Ratnayake</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right">
+
+                </span>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Love your flavors!💕 Keep it up 🙌</p>
+                <div class="user">
+                    <img src="images/user2.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Kalani Gamage</h3>
+                        <span>happy customer</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right">
+
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- review section end -->
+    <!-- contact section start -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading">contact <span>us</span> </h1>
+        <div class="row">
+            <form method="POST" onsubmit="return validateForm()" name="myForm" action="#">
+                <input type="text" placeholder="name" class="box" name="name" id="name" title="Enter a valid name">
+                <input type="email" placeholder="email" class="box" name="email" id="email" title="Enter a valid email">
+                <input type="number" placeholder="number" class="box" name="pnum" id="pnum" title="Enter a valid contact number">
+                <textarea name="message" id="message" class="box" placeholder="message" id="" cols="30" rows="10" title="Please enter your message briefly! Using maximum 50 characters"></textarea>
+
+                <input type="submit" value="send message" class="btn" title="Send your message!">
+
+            </form>
+            <div class="image">
+                <img src="images/im.jpg" alt="">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section end -->
+    <!-- footer section start -->
+    <section class="footer">
+        <div class="credit"></div>
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favourites</a>
+
+            </div>
+            <div class="box">
+                <h3>Outlets</h3>
+                <a href="#">Colombo, Sri Lanka</a>
+                <a href="#">Perth, Australia</a>
+                <a href="#">Soul, South Korea</a>
+                <a href="#">Mumbai, India</a>
+                <a href="#">Las Vagas, USA</a>
+            </div>
+            <div class="box">
+                <h3>contact info.</h3><ul type="circle">
+                <a href="#"><li>+11-4567-345</li></a>
+                <a href="#"><li>smoothiefoods@hotmail.com</li></a>
+                <a href="#"><li>"No:678", Kandy Rd, Colombo5</li></a></ul>
+                <img src="images/payment.png" alt="">
+
+            </div>
+        </div>
+        <div class="credit">created by <span>Smoothie Foods</span> | copyright © 2022</div>
+    </section>
+    <!-- footer section end -->
+</body>
+
+</html>
